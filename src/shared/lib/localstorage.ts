@@ -9,8 +9,9 @@ export const setToLocalStorage = <T extends Record<string, any>>(key: string, va
 export const getFromLocalStorage = <T>(key: string, defaultValue: T) => {
     try {
         const value = localStorage.getItem(key)
-        return value ? JSON.parse(value) : defaultValue
+        return value ? (JSON.parse(value) as T) : defaultValue
     } catch (error) {
         console.error(error, 'getFromLocalStorage', key)
+        return defaultValue
     }
 }

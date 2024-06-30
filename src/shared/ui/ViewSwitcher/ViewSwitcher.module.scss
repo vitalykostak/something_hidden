@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    padding: 4px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.active {
+    color: black;
+    border: 2px dashed black;
+}

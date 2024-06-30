@@ -1,0 +1,119 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    padding: 16px 32px;
+    border-radius: 32px;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    @media (hover: hover) {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.withAction {
+    padding-right: 64px;
+
+    @media (max-width: 768px) {
+        padding-right: 16px;
+    }
+}
+
+.imgContainer {
+    margin-right: 16px;
+    display: flex;
+    align-self: center;
+
+    @media (max-width: 768px) {
+        margin-right: 8px;
+    }
+}
+
+.img {
+    width: 150px;
+    border-radius: 8px;
+
+    @media (max-width: 768px) {
+        width: 90px;
+    }
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.movieNameAndYearContainer {
+    display: flex;
+    align-items: center;
+}
+
+.movieName {
+    font-size: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+.year {
+    font-size: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        margin-right: 32px;
+    }
+}
+
+.description {
+    font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-top: 30px;
+    padding-right: 16px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+
+        padding-right: 4px;
+    }
+}
+
+.genresContainer {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.action {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+
+    @media (hover: hover) {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2px 16px;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+
+        padding: 2px 12px;
+    }
+}

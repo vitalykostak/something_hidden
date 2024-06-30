@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.favoritesList {
+    width: 400px;
+    min-width: 400px;
+
+    @media (max-width: 992px) {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.movieDetailsModal {
+    width: 80vw;
+    max-width: 80vw;
+}

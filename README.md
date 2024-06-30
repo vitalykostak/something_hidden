@@ -12,6 +12,8 @@ Project follows the Feature-Sliced Design (FSD) architecture. Check out the FSD 
 
 [Feature-Sliced Design](https://feature-sliced.design/)
 
+All features are implemented with usage react context and props to use Dependency Inversion(DI) in order to achieve Low Coupling. It is needed for modules isolation and as a result easier implementing/testing/maintaining/reading
+
 ### Optimization
 
 To optimize the application performance and user experience, the project utilizes the following techniques:
